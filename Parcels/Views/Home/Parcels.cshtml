@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div>
+            <p>Your Height is: @Model.GetHeight() </p>
+            <p>Your Width is: @Model.GetWidth() </p>
+            <p>Your Depth is: @Model.GetDepth() </p>
+            <p>Your Weight is: @Model.GetWeight() </p> 
+            <hr>
+            <p>Your Volume is: @Model.GetVolume( @Model.GetHeight(), @Model.GetWidth(), @Model.GetDepth() ) </p>
+            <p>Your Cost is: $ @Model.GetCost( @Model.GetWeight() ) </p>
+        </div>
+    </body>
+</html>
